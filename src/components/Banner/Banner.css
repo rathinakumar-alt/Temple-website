@@ -1,0 +1,32 @@
+.banner-section {
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFFDF0; /* Match header background */
+}
+
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Add a subtle fade-in animation */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
