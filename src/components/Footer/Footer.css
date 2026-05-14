@@ -3,13 +3,14 @@
   /* Dark background */
   color: #fdfcf0;
   /* Light text */
-  padding: 4rem 1rem 1.5rem;
+  padding: 4rem 0 1.5rem;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 .footer-container {
   max-width: 1126px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .footer-content {
@@ -22,7 +23,7 @@
 
 @media (max-width: 768px) {
   .temple-footer {
-    padding: 2.5rem 1rem 1rem;
+    padding: 2.5rem 0 1rem;
   }
 
   .footer-content {
