@@ -213,6 +213,7 @@
     padding: 0 0.25rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    word-break: break-word;
     max-width: 180px; /* Limit width to force wrapping */
   }
   
