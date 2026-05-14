@@ -80,6 +80,10 @@
   gap: 0.2rem;
 }
 
+.footer-title span {
+  color: inherit;
+}
+
 .footer-address {
   display: flex;
   flex-direction: column;
