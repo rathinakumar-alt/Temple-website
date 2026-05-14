@@ -2,6 +2,7 @@
   background-color: #fdfcf0;
   padding: 5rem 1rem;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
 .divine-heritage-container {
@@ -11,16 +12,18 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  padding: 0 1.5rem;
 }
 
 @media (max-width: 968px) {
   .divine-heritage-section {
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
   }
   
   .divine-heritage-container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    padding: 0 1.5rem;
   }
 }
 
