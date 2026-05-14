@@ -54,6 +54,8 @@
   flex-direction: column;
   gap: 1.5rem;
   border: 1px solid #f0eee2;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .status-badge {
@@ -216,7 +218,7 @@
 
 @media (max-width: 768px) {
   .action-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 }
