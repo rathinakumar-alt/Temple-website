@@ -45,13 +45,15 @@
 
 @media (max-width: 480px) {
   .footer-title {
-    font-size: 1.15rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    max-width: 100%;
-    margin-inline: auto;
-    line-height: 1.3;
+    font-size: 1.5rem;
+    gap: 0.2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-title .main-word {
+    font-size: 1.15rem; /* Ensure the long word fits on its line */
+    letter-spacing: 0.02em;
   }
   
   .footer-address p {
@@ -73,6 +75,9 @@
   margin: 0;
   color: #fde047;
   /* Golden accent color for title */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .footer-address {

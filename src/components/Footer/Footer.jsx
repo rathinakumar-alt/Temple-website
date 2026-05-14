@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-info">
-            <h2 className="footer-title">Sri Kathirvelayuthaswamy Alayam</h2>
+            <h2 className="footer-title">
+              <span>Sri</span>
+              <span className="main-word">Kathirvelayuthaswamy</span>
+              <span>Alayam</span>
+            </h2>
             <div className="footer-address">
               <p>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

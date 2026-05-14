@@ -32,7 +32,11 @@ const Header = () => {
               <circle cx="12" cy="1.5" r="0.5" fill="currentColor" />
             </svg>
           </div>
-          <h1 className="logo-text">Sri Kathirvelayuthaswamy Temple</h1>
+          <h1 className="logo-text">
+            <span>Sri</span>
+            <span className="main-word">Kathirvelayuthaswamy</span>
+            <span>Temple</span>
+          </h1>
         </div>
 
         <nav className="nav-menu">
