@@ -72,6 +72,11 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  @media (max-width: 375px) {
+    position: static;
+    width: fit-content;
+    margin-top: 0.5rem;
+  }
 }
 
 .status-dot {
@@ -166,8 +171,13 @@
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+}
+@media (max-width: 400px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .info-card {
