@@ -86,10 +86,16 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+p,
+span,
+li {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 h1 {

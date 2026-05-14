@@ -37,13 +37,15 @@
   }
 
   .footer-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
 @media (max-width: 480px) {
   .footer-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
   .footer-address p {

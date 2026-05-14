@@ -25,6 +25,17 @@
     gap: 2.5rem;
     padding: 0 1.5rem;
   }
+
+  .heritage-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .deity-list {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 /* Left Column */
