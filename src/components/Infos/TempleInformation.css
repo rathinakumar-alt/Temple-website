@@ -12,8 +12,30 @@
 }
 
 @media (max-width: 968px) {
+  .temple-info-section {
+    padding: 2.5rem 1rem;
+  }
+  
   .temple-info-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .darshan-card {
+    padding: 1.75rem;
+  }
+  
+  .darshan-card h2 {
+    font-size: 1.75rem;
+  }
+
+  .info-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-section h2 {
+    text-align: center;
   }
 }
 
@@ -132,6 +154,9 @@
   font-family: serif;
   /* Try to match the screenshot's serif font */
   font-weight: 600;
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+  }
 }
 
 .info-grid {
@@ -184,6 +209,24 @@
   margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  .action-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .action-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .action-item {
+    padding: 1.25rem 1rem;
+  }
+}
+
 .action-item {
   background: #fefce8;
   padding: 1.5rem 1rem;
@@ -207,6 +250,7 @@
   font-weight: 800;
   color: #444;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* Watermark */

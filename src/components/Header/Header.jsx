@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="main-header">
       <div className="header-container">
+        <button 
+          className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`} 
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+
         <div className="logo-section">
           <div className="temple-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -35,6 +51,19 @@ const Header = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Navigation Drawer */}
+      <div className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
+        <nav className="mobile-nav-menu">
+          <a href="/" className="nav-link" onClick={toggleMenu}>Home</a>
+          <a href="/puja" className="nav-link" onClick={toggleMenu}>Puja</a>
+          <a href="/events" className="nav-link" onClick={toggleMenu}>Events</a>
+          <a href="/donations" className="nav-link" onClick={toggleMenu}>Donations</a>
+        </nav>
+      </div>
+      
+      {/* Overlay */}
+      {isMenuOpen && <div className="menu-overlay" onClick={toggleMenu}></div>}
     </header>
   );
 };

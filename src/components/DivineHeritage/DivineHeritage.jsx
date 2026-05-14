@@ -7,12 +7,14 @@ const DivineHeritage = () => {
     <section className="divine-heritage-section">
       <div className="divine-heritage-container">
 
-        {/* Left Image Section */}
-        <div className="heritage-image-wrapper">
-          <img src={muruganImg} alt="Dravidian Deity" className="heritage-image" />
-          <div className="chant-card">
-            <h3>"Velli Deva Sena Sametha Sri Kathrivelayuthaswamy"</h3>
+        <div className="heritage-left-col">
+          <div className="heritage-image-wrapper">
+            <img src={muruganImg} alt="Dravidian Deity" className="heritage-image" />
+            <div className="chant-card">
+              <h3>"Velli Deva Sena Sametha Sri Kathrivelayuthaswamy"</h3>
+            </div>
           </div>
+          <button className="calendar-btn">View 2026 Festival Calendar</button>
         </div>
 
         {/* Right Content Section */}
@@ -31,8 +33,6 @@ const DivineHeritage = () => {
             <li><strong>Lord Vinayakar</strong></li>
             <li><strong>Sri Raja Rajeshwari</strong></li>
           </ul>
-          
-          <button className="calendar-btn">View 2026 Festival Calendar</button>
         </div>
 
       </div>
