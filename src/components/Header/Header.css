@@ -178,17 +178,17 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
   .main-header {
     padding: 0.5rem 0;
   }
 
   .header-container {
-    padding: 0 1.25rem;
-  }
-
-  .hamburger-menu {
-    display: flex;
+    padding: 0 1.5rem;
   }
 
   .nav-menu {
